@@ -68,6 +68,11 @@ header nav {
   background-color: var(--white);
 }
 
+.ul-nav li {
+  list-style: none;
+  padding: 10px;
+  color: var(--grey);
+}
 #hero {
   background-color: var(--hevenly);
   padding-top: 80px;
@@ -92,11 +97,16 @@ h1 {
   margin: 50px 0;
 }
 
-.ul-nav li {
-  list-style: none;
-  padding: 10px;
-  color: var(--grey);
+#arrow-down {
+    font-size: 35px;
+    position: relative;
+    top: 80px;
 }
+
+#arrow-down a{
+    color: var(--black);
+}
+
 
 /* footer */
 footer {
