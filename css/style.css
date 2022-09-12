@@ -1,81 +1,105 @@
 /* Common */
-:root{
-    --white: #fff;
-    --hevenly: #B4D0E7;
-    --black: #000;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .container{
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .container-small{
-    max-width: 1000px;
-    margin: 150px auto;
-  }
-  
-  .d-flex{
-    display: flex;
-  }
-  
-  .w-30{
-    width: 30%;
-  }
-  
-  .w-70{
-    width: 70%;
-  }
-  
-  /* header */
-  header nav{
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: var(--white);
-  }
-  
-  #hero{
-    background-color: var(--hevenly);
-    padding-top: 80px;
-    margin: 0 auto;
-  }
-  
-  #hero .container{
-    position: relative;
-    bottom: -80px;
-  }
-  
-  h1{
-    font-size: 76px;
-  }
+:root {
+  --white: #fff;
+  --hevenly: #b4d0e7;
+  --black: #000;
+  --btn-blu: #0061ff;
+  --grey: #4a4646;
+}
 
-  .w-70 img{
-    width: 100%;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  /* footer */
-  footer{
-    background-color: var(--black);
-    color: var(--white);
-  }
-  
-  
-  
+.container-small {
+  max-width: 1000px;
+  margin: 150px auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.just-btw {
+  justify-content: space-between;
+}
+
+.al-cnt {
+    align-items: center;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.btn {
+  display: block;
+  background-color: var(--btn-blu);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* header */
+header nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--white);
+}
+
+#hero {
+  background-color: var(--hevenly);
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+#hero .container {
+  position: relative;
+  bottom: -80px;
+}
+
+h1 {
+  font-size: 76px;
+  margin-bottom: 75px;
+}
+
+.w-70 img {
+  width: 100%;
+}
+
+.w-30 .btn {
+  margin: 50px 0;
+}
+
+.ul-nav li {
+  list-style: none;
+  padding: 10px;
+  color: var(--grey);
+}
+
+/* footer */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+}
