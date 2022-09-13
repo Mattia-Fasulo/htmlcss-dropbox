@@ -31,6 +31,9 @@ body {
   margin: 150px auto;
 }
 
+.pos-rel {
+  position: relative;
+}
 
 .d-flex {
   display: flex;
@@ -44,12 +47,28 @@ body {
     align-items: center;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.mrg-40 {
+  margin: 40px 30px;
+}
+.min-w200 {
+min-width: 200px;
+
+}
+
 .w-30 {
   width: 30%;
 }
 
 .w-70 {
   width: 70%;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 .mg-bot {
@@ -141,6 +160,63 @@ h1 {
     margin-right: 50px;
 }
 
+.radio-in {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-in input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio-in:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radio-in input:checked ~ .checkmark {
+  background-color:  var(--btn-blu);
+}
+
+.radio-in:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-in input:checked ~ .radio-in:after {
+  display: block;
+}
+
+.radio-in .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--white);
+}
+
+/* card */
 .container-card {
     width: 100%;
     flex-wrap: wrap;
@@ -158,6 +234,7 @@ h1 {
     text-align: center;
     padding: 10px;
     border-bottom: 2px solid var(--light-grey);
+    
 }
 
 .txt-card {
@@ -181,10 +258,17 @@ h1 {
 .btn-card {
     width: 98%;
     margin-top: 60px;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;  
+  }
 
-.hr-card {
+  .line-large{
+    background-color: var(--light-grey);
+    height: 2px;
+    width: 100%;
+    border: none;
+  }
+
+.line-small {
     height: 2px;
     margin: 40px 0;
     width: 45px;
@@ -192,6 +276,29 @@ h1 {
     background-color: var(--light-grey);
 }
 
+/* horizontal container */
+.hr-container {
+  margin-top: 50px;
+  width: 100%;
+  border: 2px solid var(--light-grey);
+  position: relative;
+}
+
+.hr-head-card {
+  text-align: center;
+    padding: 10px;
+}
+
+div.d-flex p{
+  margin-top: 60px;
+  line-height: normal;
+}
+
+#btn-hr{
+  position: relative;
+  top: -26px;
+  right: -110px;
+}
 
 /* footer */
 footer {
