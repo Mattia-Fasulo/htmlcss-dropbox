@@ -63,6 +63,14 @@ min-width: 200px;
   width: 30%;
 }
 
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -298,6 +306,27 @@ div.d-flex p{
   position: relative;
   top: -26px;
   right: -110px;
+}
+
+/* section plane */
+.img-find img{
+  width: 100%;
+}
+
+#txt-find {
+  padding: 60px 50px;
+  line-height: 30px;
+}
+
+#txt-find p {
+  margin-top: 30px;
+}
+
+#txt-find .btn{
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  margin-top: 30px;
 }
 
 /* footer */
