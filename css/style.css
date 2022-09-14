@@ -77,6 +77,10 @@ body {
   flex-wrap: wrap;
 }
 
+.skretch {
+  flex-grow: calc(100%);
+}
+
 /* margin */
 
 .mrg-40 {
@@ -154,7 +158,7 @@ body {
 
 /* header */
 header nav {
-  height: 50px;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -162,6 +166,9 @@ header nav {
   background-color: var(--white);
 }
 
+.right-nav{
+  height: 100%;
+}
 
 .ul-nav li {
   list-style: none;
@@ -174,21 +181,50 @@ li a {
   text-decoration: none;
 }
 
+li button{
+  display: inline-block;
+}
 
+#right-nav li.d-flex {
+  padding: 31px 23px;
+}
+
+#left-nav li.d-flex {
+  padding: 23px
+}
 
 .hide-ul{
   background-color: var(--white);
   position: absolute;
-  padding-top: 20px;
-  top: 18px;
-  left: -10px;
+  padding-top: px;
+  top: 80px;
+  left: 0px;
   display: none;
   z-index: 1;
 }
 
+li.pos-rel:hover {
+  background-color: rgb(238, 238, 238);
+  box-shadow: -1px 0px 2px var(--grey);
+  
+}
 
-a:hover ~ .hide-ul {
+li.pos-rel:hover  .hide-ul {
   display: flex;
+  background-color: rgb(238, 238, 238);
+  box-shadow: -1px 2px 2px var(--grey);
+  
+}
+
+.hide-ul ul{
+  padding: 15px;
+  min-width: 150px;
+  
+}
+
+.drop-ul li{
+  list-style: none;
+  padding: 10px 0;
 }
 
 .hide-ul:hover {
