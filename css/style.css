@@ -40,6 +40,10 @@ body {
   margin: 150px auto;
 }
 
+.pad {
+  padding: 50px;
+}
+
 .pos-rel {
   position: relative;
 }
@@ -133,6 +137,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .txt-grey {
   color: var(--light-grey);
 }
@@ -155,8 +161,34 @@ header nav {
 .ul-nav li {
   list-style: none;
   padding: 10px;
-  color: var(--grey);
+  color: var(--black);
 }
+
+li a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.hide-ul{
+  width: 150px;
+  background-color: var(--white);
+  position: absolute;
+  padding-top: 20px;
+  top: 15px;
+  left: -10px;
+  display: none;
+  z-index: 1;
+}
+
+
+a:hover ~ .hide-ul {
+  display: block;
+}
+
+.hide-ul:hover {
+  display: block;
+}
+
 #hero {
   background-color: var(--hevenly);
   padding-top: 80px;
