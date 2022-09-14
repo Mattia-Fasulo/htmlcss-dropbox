@@ -142,11 +142,10 @@ body {
   transition: all 1s linear;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: #6098f3;
   box-shadow: 1px 1px 1px #4a4646;
 }
-
 
 .txt-grey {
   color: var(--light-grey);
@@ -166,7 +165,7 @@ header nav {
   background-color: var(--white);
 }
 
-.right-nav{
+.right-nav {
   height: 100%;
 }
 
@@ -181,7 +180,7 @@ li a {
   text-decoration: none;
 }
 
-li button{
+li button {
   display: inline-block;
 }
 
@@ -190,10 +189,10 @@ li button{
 }
 
 #left-nav li.d-flex {
-  padding: 23px
+  padding: 23px;
 }
 
-.hide-ul{
+.hide-ul {
   background-color: var(--white);
   position: absolute;
   padding-top: px;
@@ -206,23 +205,20 @@ li button{
 li.pos-rel:hover {
   background-color: rgb(238, 238, 238);
   box-shadow: -1px 0px 2px var(--grey);
-  
 }
 
-li.pos-rel:hover  .hide-ul {
+li.pos-rel:hover .hide-ul {
   display: flex;
   background-color: rgb(238, 238, 238);
   box-shadow: -1px 2px 2px var(--grey);
-  
 }
 
-.hide-ul ul{
+.hide-ul ul {
   padding: 15px;
   min-width: 150px;
-  
 }
 
-.drop-ul li{
+.drop-ul li {
   list-style: none;
   padding: 10px 0;
 }
@@ -287,7 +283,6 @@ h2 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
 }
 
 .radio-in input {
@@ -596,6 +591,18 @@ nav.w-100 .container {
 }
 
 .ul-footer hr {
-  margin-left: -75px;
-  
+  margin-left: -45px;
+  height: 0.5px;
+  width: 30%;
+}
+
+.ul-footer span {
+  margin-left: -55px;
+  font-weight: lighter;
+  color: #8f8e8e;
+  margin-bottom: 50px;
+}
+
+#caret-up {
+  margin-left: 2px;
 }
