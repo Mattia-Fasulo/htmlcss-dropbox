@@ -528,7 +528,7 @@ svg {
   display: none;
 }
 
-.hov:hover .hid-txt {
+.car-down:hover ~ .hid-txt {
   display: block;
 }
 
